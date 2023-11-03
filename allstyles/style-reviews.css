@@ -1,0 +1,259 @@
+
+
+.reviews{
+  background-color: #ffffff;
+}
+
+.reviews__container{
+  max-width: 1170px;
+  margin: 69px auto 44px auto;
+}
+
+.reviews__title{
+  width: 100%;
+  margin-bottom: 80px;
+}
+.reviews__title h2{
+  padding-bottom: 55px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+
+}
+.reviews__title h5{
+  margin-top: 38px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #86878B;
+  margin-bottom: 35px;
+}
+
+
+
+.reviews__mes-cards{
+   width: 95%;
+   margin: 0 auto;
+}
+
+.wrapper__cards-rev{
+  display: flex;
+  margin:0px auto;
+}
+
+.card__full{
+  margin:0px 10px;
+  margin-bottom: 20px;
+}
+ 
+.mes-card{
+  background-color: #E2E2E2;
+  border-radius: 10px;
+  position: relative; 
+  height: 180px;
+  max-width: 100%;
+}
+.mes-card::after{
+  content: '';
+  position: absolute;
+  margin-left: 20%;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 25px solid #E2E2E2;
+}
+.mes-card__text{ 
+  padding-top: 10px;
+  height: 100%;
+}
+.mes-card__text h5{
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  color: #86878B;
+  padding-left: 30px;
+  padding-right: 30px;
+} 
+
+
+.employe-card{
+  margin-top: 60px;
+  margin-left: 0px;
+  margin-right: auto;
+  display: flex;
+}
+.employes-card__discr{
+  margin-left: 30px;
+}
+.employes-card__discr h4{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+}
+.employes-card__discr p{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin-top: 15px;
+}
+
+.reviews__slaider-btns{
+  display: none;
+  flex-direction: row;
+}
+.slaider-btn{
+  display: none;
+}
+.slaider-btn + label::before{
+  
+  content: "";
+  display: block;  
+  width: 10px;
+  height: 10px;
+  border: 1px solid #86878B;
+  border-radius: 50%;
+  margin: 10px;
+}
+.slaider-btn:checked + label::before{
+  background-color: #86878B;
+}
+
+@media screen and (max-width: 1150px){
+  .reviews{
+    background-color: #ffffff;
+  }  
+  .reviews__container{
+    max-width: 1150px;
+    margin: 69px auto 36px auto;
+  }
+ 
+  .reviews__title{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .reviews__title h2{
+    padding-bottom: 45px;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+  }
+  .reviews__title h5{
+    margin-top: 33px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #86878B;
+    margin-bottom: 0px;
+  }
+
+  .mes-card{
+    background-color: #E2E2E2;
+    border-radius: 10px;
+    position: relative; 
+  }
+  .mes-card__text{ 
+    padding-top: 28px;
+  }
+  .mes-card__text h5{
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+  } 
+  
+
+  
+  
+  .employe-card{
+    margin-top: 68px;
+    margin-left: 0px;
+    margin-right: auto;
+    display: flex;
+  }
+  
+  .employes-card__discr{
+    margin-left: 30px;
+  }
+  
+  .employes-card__discr h4{
+    margin-top: -11px;
+    margin-left: -3px;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+  
+  }
+  .employes-card__img img{
+    width: 63px;
+    height: 63px;
+  }
+  
+  .employes-card__discr p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-top: 0px;
+    margin-left: -4px;
+  
+  }
+  
+}
+@media screen and (max-width:880px){
+  .reviews__container{
+    margin-top: 40px;
+  }
+  .wrapper__cards-rev{
+    transition: all ease 1s;
+  }
+  .reviews__title{
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .reviews__slaider-btns{
+    display: flex;
+    padding-top: 0px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-left: 44% ;
+    transition: 0.5s;
+  }
+
+
+  }
+@media screen and (max-width:600px){
+  .reviews__slaider-btns{
+    padding-left: 38% ;
+    transition: 0.5s;
+  }
+  .reviews__mes-cards{    
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width:320px){
+
+.reviews__slaider-btns{
+  padding-left: 35% ;
+  transition: 0.5s;
+}
+
+
+}
+ 
